@@ -1,0 +1,12 @@
+﻿services:
+  stockmarket:
+    image: stockmarket
+    build:
+      context: .
+      dockerfile: StockMarket/Dockerfile
+
+  webapplication1:
+    image: webapplication1
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
