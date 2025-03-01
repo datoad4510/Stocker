@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Blazor.Bootstrap" Version="3.3.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Components\Test\Counter.razor" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Auth\Authentication\" />
+      <Folder Include="Auth\Authorization\Policy providers and attributes\" />
+      <Folder Include="Auth\Authorization\Requirements and Handlers\" />
+    </ItemGroup>
+
+</Project>
