@@ -16,6 +16,14 @@
     <ItemGroup>
       <PackageReference Include="Blazor.Bootstrap" Version="3.3.1" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="9.0.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -24,8 +32,6 @@
 
     <ItemGroup>
       <Folder Include="Auth\Authentication\" />
-      <Folder Include="Auth\Authorization\Policy providers and attributes\" />
-      <Folder Include="Auth\Authorization\Requirements and Handlers\" />
     </ItemGroup>
 
 </Project>

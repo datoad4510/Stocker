@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockPredictor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f61eed95da5cf52a0d5bbbf17834e306b8ca82f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39d77cc74aa8d84364c25f4211cbd71b36031428")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockPredictor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockPredictor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

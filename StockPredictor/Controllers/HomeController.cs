@@ -22,8 +22,8 @@ public class HomeController : Controller
         return View();
     }
 
-    [MinimumAgeAuthorize(18)]
-    [Authorize(Policy = "MinimumAge18")]
+    // [MinimumAgeAuthorize(18)]
+    // [Authorize(Policy = "MinimumAge18")]
     [AllowAnonymous]
     public IActionResult Privacy()
     {
